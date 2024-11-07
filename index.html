@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hledají se hrdinové 12. úrovně!</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=IM+Fell+English&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&family=IM+Fell+English&display=swap">
     <style>
         /* Global Styles */
         body {
@@ -22,18 +22,59 @@
             margin: 0 auto;
             padding: 20px;
             border: 3px solid #8b4513;
-            background: rgba(255, 248, 225, 0.9);
-            box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+            background: rgba(255, 248, 225, 0.95);
+            box-shadow: inset 0 0 15px rgba(0, 0, 0, 0.6), 0 0 15px rgba(0, 0, 0, 0.5);
             border-radius: 15px;
             font-size: 18px;
+            position: relative;
+            padding-top: 40px;
+            padding-bottom: 40px;
+        }
+
+        /* Decorative Borders */
+        .container:before,
+        .container:after {
+            content: '';
+            position: absolute;
+            width: 100px;
+            height: 20px;
+            background: #8b4513;
+            top: -15px;
+            left: 50%;
+            transform: translateX(-50%);
+            border-radius: 5px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        .container:after {
+            top: unset;
+            bottom: -15px;
         }
 
         h1 {
-            font-family: "Cinzel", serif;
+            font-family: "Cinzel Decorative", serif;
             color: #8b0000;
             text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
-            font-size: 2em;
+            font-size: 2.2em;
             margin-bottom: 15px;
+            position: relative;
+        }
+
+        h1:before, h1:after {
+            content: '✦';
+            font-size: 1.5em;
+            position: absolute;
+            color: #8b4513;
+        }
+
+        h1:before {
+            left: -30px;
+            top: 0;
+        }
+
+        h1:after {
+            right: -30px;
+            top: 0;
         }
 
         .highlight {
@@ -51,6 +92,7 @@
             border-radius: 10px;
             box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
             font-style: italic;
+            font-size: 1.1em;
         }
 
         .equipment {
@@ -62,6 +104,7 @@
             border-radius: 10px;
             box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
             font-style: italic;
+            font-size: 1.1em;
         }
 
         /* Link styles */
@@ -69,6 +112,7 @@
             color: #8b0000;
             text-decoration: none;
             font-weight: bold;
+            font-style: italic;
         }
 
         a:hover {
@@ -79,19 +123,29 @@
         /* Icon style */
         .icon {
             color: #8b4513;
-            font-size: 1.2em;
+            font-size: 1.4em;
             margin-right: 5px;
+            vertical-align: middle;
+        }
+
+        /* Footer Decorative Element */
+        .footer-decor {
+            text-align: center;
+            font-size: 1.5em;
+            color: #8b4513;
+            margin-top: 20px;
+            font-family: "Cinzel Decorative", serif;
         }
     </style>
 </head>
 <body>
     <div class="container">
         <h1><span class="icon">⚔️</span> Hledají se hrdinové 12. úrovně!</h1>
-        <p>Detektivové, dobrodruzi a hrdinové všech druhů, <span class="highlight">vaše pomoc je žádána!</span> V odlehlé vesnici Dřevostín dochází k závažným zmizením a zvláštním jevům, které děší místní obyvatele.</p>
+        <p>Detektivové, dobrodruzi a hrdinové všech druhů, <span class="highlight">vaše pomoc je žádána!</span> V odlehlé vesnici Dřevostín dochází k závažným zmizením a zvláštním jevům, které děsí místní obyvatele.</p>
         <p>Potřebujeme ty nejlepší z vás – ty, kteří se nezaleknou hrůz ukrytých v temnotě a dovedou čelit neznámým silám. Vaše zkušenosti s bojem proti nemrtvým, odhalováním záhadných kultů nebo překonáváním magie stínů jsou zde více než vítány.</p>
 
         <div class="callout">
-            <p><span class="icon">🏰</span><strong>Sraz:</strong> Neverwinter, Krčma U Zlatého Draka v 18:00 (16.11.2024)</p>
+            <p><span class="icon">🏰</span><strong>Sraz:</strong> Neverwinter, Krčma U Zlatého Draka v 18:00 (16.11.2024 - 14:00)</p>
             <p><span class="icon">🛡️</span><strong>Dostavník vás vyzvedne a dopraví přímo do vesnice Dřevostín</strong>, která se nachází hluboko v temných hvozdech. Připravte se na záhady, výzvy a nebezpečí, která přesahují hranice běžného dobrodružství.</p>
         </div>
 
@@ -103,5 +157,6 @@
 
         <p><span class="highlight">Odvaha a vynalézavost</span> jsou vaší vstupenkou. Jste připraveni čelit temným kultům, přízrakům minulosti a neznámým silám z jiných sfér? <span class="highlight">Přidejte se a společně odhalte pravdu skrytou ve stínech!</span></p>
     </div>
+    <div class="footer-decor">✧✦✧</div>
 </body>
 </html>
