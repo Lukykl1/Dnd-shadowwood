@@ -55,27 +55,38 @@
             font-family: "Cinzel Decorative", serif;
             color: #8b0000;
             text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
-            font-size: 2.2em;
+            font-size: 1.7em;
             margin-bottom: 15px;
             position: relative;
         }
 
-        h1:before, h1:after {
-            content: '✦';
-            font-size: 1.5em;
-            position: absolute;
-            color: #8b4513;
-        }
+h1:before, h1:after {
+    content: '✦';
+    font-size: 1.5em;
+    position: absolute;
+    color: #8b4513;
+    top: 50%;
+    transform: translateY(-50%);
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
+}
 
-        h1:before {
-            left: -30px;
-            top: 0;
-        }
+h1:before {
+    left: -30px;
+}
 
-        h1:after {
-            right: -30px;
-            top: 0;
-        }
+h1:after {
+    right: -30px;
+}
+
+.container {
+    background: linear-gradient(180deg, rgba(255, 248, 225, 0.98), rgba(255, 245, 215, 0.9));
+    box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.6), 0 0 15px rgba(0, 0, 0, 0.5);
+}
+
+.callout, .equipment {
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.4);
+}
+
 
         .highlight {
             font-weight: bold;
@@ -140,7 +151,7 @@
 </head>
 <body>
     <div class="container">
-        <h1><span class="icon">⚔️</span> Hledají se hrdinové 12. úrovně!</h1>
+        <h1><span class="icon">⚔️</span> Hledají se hrdinové 12. úrovnĚ!</h1>
         <p>Detektivové, dobrodruzi a hrdinové všech druhů, <span class="highlight">vaše pomoc je žádána!</span> V odlehlé vesnici Dřevostín dochází k závažným zmizením a zvláštním jevům, které děsí místní obyvatele.</p>
         <p>Potřebujeme ty nejlepší z vás – ty, kteří se nezaleknou hrůz ukrytých v temnotě a dovedou čelit neznámým silám. Vaše zkušenosti s bojem proti nemrtvým, odhalováním záhadných kultů nebo překonáváním magie stínů jsou zde více než vítány.</p>
 
