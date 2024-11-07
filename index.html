@@ -4,74 +4,104 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hledají se hrdinové 12. úrovně!</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=IM+Fell+English&display=swap">
     <style>
+        /* Global Styles */
         body {
-            background-color: #f4f1e5;
+            background: #f5f2e9 url('https://www.transparenttextures.com/patterns/aged-paper.png');
             color: #3a2f23;
-            font-family: "Georgia", serif;
+            font-family: "IM Fell English", serif;
             line-height: 1.6;
-            text-align:center;
+            text-align: center;
+            padding: 20px;
+            margin: 0;
         }
+
         .container {
             max-width: 800px;
             margin: 0 auto;
             padding: 20px;
-            border: 2px solid #8b4513;
-            background: #fff8e1;
-            box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+            border: 3px solid #8b4513;
+            background: rgba(255, 248, 225, 0.9);
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+            border-radius: 15px;
+            font-size: 18px;
         }
+
         h1 {
-            font-family: "Book Antiqua", serif;
+            font-family: "Cinzel", serif;
             color: #8b0000;
-            text-align: center;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+            font-size: 2em;
+            margin-bottom: 15px;
         }
+
         .highlight {
             font-weight: bold;
             color: #8b4513;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
         }
+
         .callout {
             text-align: center;
-            padding: 10px;
+            padding: 15px;
             background-color: #ffe4b5;
-            margin: 15px 0;
-            border: 1px solid #cd853f;
+            margin: 20px 0;
+            border: 2px solid #cd853f;
+            border-radius: 10px;
             box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+            font-style: italic;
         }
+
         .equipment {
             text-align: left;
             padding: 15px;
-            background-color: #fdf5e6;
-            margin: 15px 0;
+            background-color: rgba(250, 235, 215, 0.9);
+            margin: 20px 0;
             border: 2px dashed #8b4513;
+            border-radius: 10px;
             box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+            font-style: italic;
         }
+
+        /* Link styles */
         a {
             color: #8b0000;
             text-decoration: none;
+            font-weight: bold;
         }
+
         a:hover {
             text-decoration: underline;
+            color: #cd5c5c;
+        }
+
+        /* Icon style */
+        .icon {
+            color: #8b4513;
+            font-size: 1.2em;
+            margin-right: 5px;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>Hledají se hrdinové 12. úrovně!</h1>
+        <h1><span class="icon">⚔️</span> Hledají se hrdinové 12. úrovně!</h1>
         <p>Detektivové, dobrodruzi a hrdinové všech druhů, <span class="highlight">vaše pomoc je žádána!</span> V odlehlé vesnici Dřevostín dochází k závažným zmizením a zvláštním jevům, které děší místní obyvatele.</p>
         <p>Potřebujeme ty nejlepší z vás – ty, kteří se nezaleknou hrůz ukrytých v temnotě a dovedou čelit neznámým silám. Vaše zkušenosti s bojem proti nemrtvým, odhalováním záhadných kultů nebo překonáváním magie stínů jsou zde více než vítány.</p>
 
         <div class="callout">
-            <p><strong>Sraz:</strong> Neverwinter, Krčma U Zlatého Draka v 18:00 (16.11.2024)</p>
-            <p><strong>Dostavník vás vyzvedne a dopraví přímo do vesnice Dřevostín</strong>, která se nachází hluboko v temných hvozdech. Připravte se na záhady, výzvy a nebezpečí, která přesahují hranice běžného dobrodružství.</p>
+            <p><span class="icon">🏰</span><strong>Sraz:</strong> Neverwinter, Krčma U Zlatého Draka v 18:00 (16.11.2024)</p>
+            <p><span class="icon">🛡️</span><strong>Dostavník vás vyzvedne a dopraví přímo do vesnice Dřevostín</strong>, která se nachází hluboko v temných hvozdech. Připravte se na záhady, výzvy a nebezpečí, která přesahují hranice běžného dobrodružství.</p>
         </div>
 
         <p><span class="highlight">Vysoká odměna zaručena!</span> Kromě zlata vás čeká i příslib vzácných magických předmětů, které mohou pomoci v dalším boji proti silám zla.</p>
 
         <div class="equipment">
-            <p><strong>Doporučené vybavení:</strong> Každý hrdina by měl mít u sebe <strong>tři magické předměty</strong>, které posílí jeho schopnosti proti neznámým silám. Ať je vaše výbava odpovídající vaší pověsti! Pokud jste například horník, přizpůsobte své vybavení svému umění – farmářské nástroje ponechte doma, pokud se nechystáte obdělávat pole nepřátel!</p>
+            <p><span class="icon">🪓</span><strong>Doporučené vybavení:</strong> Každý hrdina by měl mít u sebe <strong>tři magické předměty</strong>, které posílí jeho schopnosti proti neznámým silám. Ať je vaše výbava odpovídající vaší pověsti! Pokud jste například horník, přizpůsobte své vybavení svému umění – farmářské nástroje ponechte doma, pokud se nechystáte obdělávat pole nepřátel!</p>
         </div>
 
-        <p>Odvaha a vynalézavost jsou vaší vstupenkou. Jste připraveni čelit temným kultům, přízrakům minulosti a neznámým silám z jiných sfér? <span class="highlight">Přidejte se a společně odhalte pravdu skrytou ve stínech!</span></p>
+        <p><span class="highlight">Odvaha a vynalézavost</span> jsou vaší vstupenkou. Jste připraveni čelit temným kultům, přízrakům minulosti a neznámým silám z jiných sfér? <span class="highlight">Přidejte se a společně odhalte pravdu skrytou ve stínech!</span></p>
     </div>
 </body>
 </html>
